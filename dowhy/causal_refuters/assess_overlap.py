@@ -39,6 +39,7 @@ class AssessOverlap(CausalRefuter):
         :param: support_only: bool: Only fit rules to describe the support region (do not fit overlap rules), defaults to False
         :param: overlap_only: bool: Only fit rules to describe the overlap region (do not fit support rules), defaults to False
         """
+        #tests
         super().__init__(*args, **kwargs)
         # TODO: Check that the target estimand has backdoor variables?
         self._backdoor_vars = self._target_estimand.get_backdoor_variables()
